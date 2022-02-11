@@ -120,17 +120,6 @@
     grid-template-columns: repeat(7, 1fr);
 }
 
-/* CLI */
-.cli .container {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-}
-
-.cli .container>*:first-child {
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 2;
-}
-
 /* MARGIN */
 
 .my-1 {
