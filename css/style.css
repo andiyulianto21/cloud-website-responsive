@@ -5,6 +5,7 @@
     --secondary-color: #1c3fa8;
     --dark-color: #002240;
     --light-color: #f4f4f4;
+    --green-color: rgb(61, 180, 71);
 }
 
 * {
@@ -191,7 +192,8 @@ img {
 
 /* FEATURES */
 /* Header */
-.features-head .container img {
+.features-head .container img,
+.docs-head .container img {
     width: 45%;
     justify-self: end;
 }
@@ -222,6 +224,29 @@ img {
 
 .features-main .card p {
     margin-left: 15px;
+}
+
+/* DOCS */
+/* main */
+.docs-main h3 {
+    margin: 20px 0;
+}
+
+.docs-main .grid {
+    grid-template-columns: 1fr 2fr;
+    align-items: start;
+}
+
+.docs-main .shape {
+    margin: 20px 0;
+}
+
+.docs-main .flex {
+    justify-content: flex-start;
+}
+
+.docs-main .shape i {
+    padding: 0 10px 0 20px;
 }
 
 /* MEDIA QUERIES */

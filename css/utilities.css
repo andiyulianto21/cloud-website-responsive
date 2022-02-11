@@ -54,6 +54,13 @@
 .btn-light,
 .bg-light {
     background-color: var(--light-color);
+    color: #333;
+}
+
+.btn-green,
+.bg-green {
+    background-color: var(--green-color);
+    color: white;
 }
 
 .btn-primary a,
@@ -62,8 +69,8 @@
 .bg-secondary a,
 .btn-dark a,
 .bg-dark a,
-.btn-light a,
-.bg-light a {
+.btn-green,
+.bg-green {
     color: white;
 }
 
@@ -94,6 +101,11 @@
 
 .text-secondary {
     color: var(--secondary-color);
+}
+
+.bold {
+    font-weight: bold;
+    color: #333;
 }
 
 .flex {
