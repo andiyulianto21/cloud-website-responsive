@@ -189,6 +189,41 @@ img {
     margin: 0 5px;
 }
 
+/* FEATURES */
+/* Header */
+.features-head .container img {
+    width: 45%;
+    justify-self: end;
+}
+
+/* Sub-Header */
+.features-sub-head .container img {
+    width: 40%;
+    justify-self: end;
+}
+
+/* Main */
+.features-main .grid {
+    padding: 30px;
+}
+
+.features-main .flex:first-child {
+    grid-column: 1 / span 3;
+}
+
+.features-main .flex:nth-child(2) {
+    grid-column: 1 / span 2;
+}
+
+.features-main .flex {
+    justify-content: start;
+    padding: 15px;
+}
+
+.features-main .card p {
+    margin-left: 15px;
+}
+
 /* MEDIA QUERIES */
 
 /* TABLET and Under */
