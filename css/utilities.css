@@ -57,12 +57,6 @@
     color: #333;
 }
 
-.btn-green,
-.bg-green {
-    background-color: var(--green-color);
-    color: white;
-}
-
 .btn-primary a,
 .bg-primary a,
 .btn-secondary a,
@@ -72,6 +66,11 @@
 .btn-green,
 .bg-green {
     color: white;
+}
+
+/* Text Color */
+.text-primary {
+    color: var(--primary-color);
 }
 
 /* Text Size */
@@ -97,6 +96,21 @@
 
 .text-center {
     text-align: center;
+}
+
+/* ALERT */
+.alert {
+    background-color: var(--light-color);
+    padding: 10px 20px;
+}
+
+.alert i {
+    margin-right: 10px;
+}
+
+.alert-success {
+    background-color: var(--success-color);
+    color: white;
 }
 
 .text-secondary {
