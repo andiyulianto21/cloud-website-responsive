@@ -46,7 +46,8 @@ img {
     width: 100%;
 }
 
-code, pre {
+code,
+pre {
     background: #333;
     color: white;
     padding: 10px;
@@ -137,6 +138,14 @@ code, pre {
     font-size: 1rem;
 }
 
+.showcase-text {
+    animation: slidefromlefttoright 700ms ease-in-out;
+}
+
+.showcase-form {
+    animation: slideFromRightToLeft 700ms ease-in-out;
+}
+
 /* STATS */
 .stats {
     padding-top: 100px;
@@ -154,6 +163,10 @@ code, pre {
 .stats .grid p {
     font-size: 1rem;
     font-weight: bold;
+}
+
+.stats {
+    animation: slideFromBottomToTop 700ms ease-in-out;
 }
 
 /* CLI */
@@ -275,8 +288,56 @@ code, pre {
     padding: 0 10px 0 20px;
 }
 
-/* MEDIA QUERIES */
+/* ANIMATION */
+@keyframes slidefromlefttoright {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
 
+    100% {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+}
+
+@keyframes slideFromRightToLeft {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+}
+
+@keyframes slideFromTopToBottom {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+@keyframes slideFromBottomToTop {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+/* MEDIA QUERIES */
 /* TABLET and Under */
 @media (max-width: 768px) {
 
@@ -326,6 +387,14 @@ code, pre {
     .features-head {
         padding: 20px;
     }
+
+    .showcase-text {
+        animation: slideFromTopToBottom 700ms ease-in-out;
+    }
+
+    .showcase-form {
+        animation: slideFromBottomToTop 700ms ease-in-out;
+    }
 }
 
 /* Smartphone */
@@ -349,8 +418,8 @@ code, pre {
         margin-top: 40px;
     }
 
-    .features-main .grid-3 > *:first-child,
-    .features-main .grid-3 > *:nth-child(2) {
+    .features-main .grid-3>*:first-child,
+    .features-main .grid-3>*:nth-child(2) {
         grid-column: 1;
     }
 }
